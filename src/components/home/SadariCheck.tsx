@@ -1,7 +1,10 @@
 
 import { Button } from "@/components/ui/button";
+import { useNavigate } from "react-router-dom";
 
 export const SadariCheck = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="bg-white rounded-t-3xl p-6 flex-1">
       <div className="text-center mb-6">
@@ -16,6 +19,7 @@ export const SadariCheck = () => {
           </Button>
           <Button 
             className="w-full bg-sadari-primary hover:bg-sadari-dark"
+            onClick={() => navigate('/sadari-check')}
           >
             Lakukan Sadari
           </Button>
