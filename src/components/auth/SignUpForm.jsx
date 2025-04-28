@@ -2,14 +2,24 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import logo from "@/assets/Logo.png";
 
 export const SignUpForm = () => {
   const [email, setEmail] = useState("");
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const navigate = useNavigate();
+
+  const handleSubmit = (e) => {
     e.preventDefault();
-    // TODO: Implement signup logic
+    // api buat registrasi
+    // Simulate an API call
+    setTimeout(() => {
+      console.log("User registered with email:", email);
+      // Redirect to the next step or show a success message
+
+      navigate("/Pendaftaran");
+    }, 1000);
     console.log("Sign up with:", email);
   };
 
@@ -19,7 +29,7 @@ export const SignUpForm = () => {
         <div className="flex flex-col items-center">
           <div className="w-24 h-24 bg-white rounded-full flex items-center justify-center mb-4">
             <img 
-              src="/lovable-uploads/7de47cd2-0aa8-429a-b79f-9ab8c24184e0.png" 
+              src={logo}
               alt="Sadari Logo" 
               className="w-20 h-20 object-contain"
             />
@@ -54,4 +64,4 @@ export const SignUpForm = () => {
       </div>
     </div>
   );
-};
+}

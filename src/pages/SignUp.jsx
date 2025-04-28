@@ -1,8 +1,8 @@
 
 import { SignUpForm } from "@/components/auth/SignUpForm";
 
-const Index = () => {
+const SignUp = () => {
   return <SignUpForm />;
 };
 
-export default Index;
+export default SignUp;
