@@ -1,4 +1,3 @@
-import './App.css'
 import { DashboardArticle } from "./pages/DashboardArticle";
 
 function App() {
