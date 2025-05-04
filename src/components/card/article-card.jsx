@@ -1,11 +1,11 @@
 import React from "react";
 
-export const ArticleCard = ({ title, description, onDelete }) => {
+export const ArticleCard = ({ title, img, description, onDelete }) => {
   return (
     <div className= "bg-white border rounded-lg shadow-md p-4">
       <figure>
         <img
-          src="/cover-article.jpg"
+          src={img}
           alt="Article"
           className="rounded-lg mb-2 w-full h-20 object-cover"
         />

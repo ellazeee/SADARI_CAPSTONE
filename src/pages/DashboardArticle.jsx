@@ -8,30 +8,35 @@ export const DashboardArticle = () => {
   const [articles, setArticles] = useState([
     { id: 1,
       title: "Judul 1", 
-      description: "Deskripsi 1" 
+      img: "/cover-article.jpg",
+      description: "Deskripsi 1"
     },
 
     { id: 2, 
       title: "Judul 2", 
+      img: "/cover-article.jpg",
       description: "Deskripsi 2"
     },
 
     { id: 3, 
       title: "Judul 3", 
+      img: "/cover-article.jpg",
       description: "Deskripsi 3" 
     },
     { id: 4, 
       title: "Judul 4", 
+      img: "/cover-article.jpg",
       description: "Deskripsi 4" 
     },
     { id: 5, 
       title: "Judul 5", 
+      img: "/cover-article.jpg",
       description: "Deskripsi 5" 
     },
   ]);
 
   const handleDeleteArticle = (id) => {
-    if (window.confirm('Apakah Anda yakin ingin menghapus artikel ini?')) {
+    if (window.confirm("Apakah Anda yakin ingin menghapus artikel ini?")) {
       setArticles(articles.filter(article => article.id !== id));
     }
   };
@@ -47,7 +52,8 @@ export const DashboardArticle = () => {
             <ArticleCard 
               key={article.id} 
               title={article.title} 
-              description={article.description} 
+              description={article.description}
+              img={article.img}
               onDelete={() => handleDeleteArticle(article.id)} 
             />
           ))}

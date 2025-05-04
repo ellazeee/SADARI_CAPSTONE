@@ -22,17 +22,20 @@ export const InputSearch = () => {
       <div className="flex justify-end mb-5 mt-5">
         <div className="header relative">
             <input
+            name="search"
+            id="search-input"
             placeholder="Search here..."
-            className="input p-2 h-8 w-56 focus:outline-pink-600 text-base pr-16 border"
+            className="input p-2 h-8 w-56 text-sm pr-16 border rounded-md outline-none"
             ref={ref}
             onKeyDown={handleSearch}
-            />
+            ></input>
             <button
-            onClick={handleSearch}
-            className="absolute bg-pink-600 text-white inset-y-0 right-0 items-center flex p-2"
-            >Enter</button>
+              onClick={handleSearch}
+              className="absolute bg-pink-400 text-white text-sm inset-y-0 right-0 items-center flex p-2 rounded-r-md"
+              >Enter
+            </button>
       </div>
-      </div>
+    </div>
     </>
   );
 };

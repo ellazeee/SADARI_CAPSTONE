@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 export const SidebarList = () => {
   return (
@@ -10,7 +10,10 @@ export const SidebarList = () => {
             <a href="" className="block hover:bg-pink-500 pl-4">Home</a>
           </li>
           <li className="mb-1 w-full h-6">
-            <a href="" className="block hover:bg-pink-500 pl-4">Post</a>
+            <a href="" className="block hover:bg-pink-500 pl-4">Articles</a>
+          </li>
+          <li className="mb-1 w-full h-6">
+            <a href="" className="block hover:bg-pink-500 pl-4">Videos</a>
           </li>
           <li className="mb-1 w-full h-6">
             <a href="" className="block hover:bg-pink-500 pl-4">Notifications</a>
@@ -18,6 +21,7 @@ export const SidebarList = () => {
           <hr className="border mt-3 mb-3" />
         </ul>
       </div>
+
       <div className="w-full">
         <h2 className="font-semibold pb-2">Account Settings</h2>
         <ul className="text-sm list-none">                            

@@ -1,6 +1,6 @@
-import React from 'react'
-import { SidebarProfile } from './sidebar-profile.jsx'
-import { SidebarList } from './sidebar-list.jsx'
+import React from "react"
+import { SidebarProfile } from "./sidebar-profile.jsx"
+import { SidebarList } from "./sidebar-list.jsx"
 
 export const Sidebar = () => {
   return (

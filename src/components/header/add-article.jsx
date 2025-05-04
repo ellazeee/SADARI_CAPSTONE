@@ -1,10 +1,10 @@
-import React from "react"
+import React from "react";
 import { useNavigate } from "react-router";
 
 export const AddArticle = () => {
   const navigate = useNavigate();
 
-const handleAddArticle = () => { navigate('/add-article'); };
+const handleAddArticle = () => { navigate(""); }; // ke halaman input data article
 
   return (
     <div class="flex mb-1 justify-between">
